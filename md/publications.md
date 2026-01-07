@@ -4,61 +4,63 @@
 
 <div class="publication-card">
     <div class="publication-image">
-        <img src="assets/test_path.jpg" alt="AgentBreeder publication">
+        <img src="../assets/Total_system_HVDC_SV_VSM.png" alt="HVDC VSM SV implementation">
     </div>
     <div class="publication-content">
         <h3 class="publication-title">
-            <a href="projects/test_project.html" class="publication-link">
-                AgentBreeder: NOasdW3_Mitigating the AI Safety Impact of Multi-Agent Scaffolds via Self-Improvement
+            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Combined%20Synchronverter-VSM%20based%20HVDC%20%20transmission%20design%20with%20Power-Hardware-In-the-Loop%20%20(PHIL)%20implementation" 
+            class="publication-link"
+            target="_blank"             
+            rel="noopener noreferrer">                    
+                Combined Synchronverter-VSM based HVDC 
+                transmission design with Power-Hardware-In-the-Loop 
+                (PHIL) implementation
             </a>
         </h3>
-        <div class="publication-venue">NeurIPS 2025 spotlight</div>
-        <div class="publication-authors">J Rosser, Jakob Foerster</div>
+        <div class="publication-venue">IEEE PES ISGT Middle East 2025
+        </div>
+        <div class="publication-authors"><strong>V. Evangelopoulos</strong>, M.-E. Karaitsi, T. Kavvathas, T. Alexandridis, and G. C. Konstantopoulos</div>
         <div class="publication-year">2025</div>
         <div class="publication-tags">
-            <span class="tag tag-safety">Multi-Agent Safety</span>
-            <a href="https://arxiv.org/abs/2502.00757" class="tag tag-arxiv">ARXIV</a>
-            <a href="https://github.com/J-Rosser-UK/AgentBreeder" class="tag tag-github">GITHUB</a>
+            <span class="tag tag-safety">HVDC</span>
+            <span class="tag tag-conference">Synchronverter</span>
+            <span class="tag tag-arxiv">VSM</span>
+            <span class="tag tag-workshop">Typhoon HIL</span>
+            <!-- <a href="https://arxiv.org/abs/2502.00757" class="tag tag-arxiv">ARXIV</a>
+            <a href="https://github.com/J-Rosser-UK/AgentBreeder" class="tag tag-github">GITHUB</a> -->
         </div>
     </div>
 </div>
 
-<div class="publication-card">
-    <div class="publication-image">
-        <img src="assets/stream_jpg.jpg" alt="Stream publication">
-    </div>
-    <div class="publication-content">
-        <h3 class="publication-title">
-            <a href="https://openreview.net/pdf?id=5HGu0ZqBl9" class="publication-link">
-                Stream: Scaling Mechanistic Interpretability to Long Context in LLMs via Sparse Attention
-            </a>
-        </h3>
-        <div class="publication-venue">NeurIPS 2025 Mech Interp Workshop</div>
-        <div class="publication-authors">J Rosser, José Luis Redondo García, Gustavo Penha, Konstantina Palla, Hugues Bouchard</div>
-        <div class="publication-year">2025</div>
-        <div class="publication-tags">
-            <span class="tag tag-safety">Mechanistic Interpretability</span>
-            <a href="https://openreview.net/pdf?id=5HGu0ZqBl9" class="tag tag-arxiv">ARXIV</a>
-        </div>
-    </div>
-</div>
+
+
+
+
 
 <div class="publication-card">
     <div class="publication-image">
-        <img src="assets/mapping_faithful.jpg" alt="Mapping Faithful Reasoning publication">
+        <img src="../assets/plume.png" alt="Plume fem">
     </div>
     <div class="publication-content">
         <h3 class="publication-title">
-            <a href="https://openreview.net/pdf?id=NJNr5KbW3m" class="publication-link">
-                Mapping Faithful Reasoning in Language Models
+            <a href="https://ieeexplore.ieee.org/document/11205583" 
+            class="publication-link"
+            target="_blank"             
+            rel="noopener noreferrer">                    
+                Human-centric approach for determination of Thermal Plume theoretically and experimentally
             </a>
         </h3>
-        <div class="publication-venue">NeurIPS 2025 Mech Interp Workshop</div>
-        <div class="publication-authors">Jiazheng Li, Andreas Damianou, J Rosser, José Luis Redondo García, Konstantina Palla</div>
+        <div class="publication-venue"> IEEE 30th International Conference on Emerging Technologies and Factory Automation (ETFA)
+        </div>
+        <div class="publication-authors">N. Bali, <strong>V. Evangelopoulos</strong>, M.-E. Karaitsi, P. Bouras and J. Gialelis</div>
         <div class="publication-year">2025</div>
         <div class="publication-tags">
-            <span class="tag tag-safety">Mechanistic Interpretability</span>
-            <a href="https://openreview.net/pdf?id=NJNr5KbW3m" class="tag tag-arxiv">ARXIV</a>
+            <span class="tag tag-safety">HVDC</span>
+            <span class="tag tag-conference">Synchronverter</span>
+            <span class="tag tag-arxiv">VSM</span>
+            <span class="tag tag-workshop">Typhoon HIL</span>
+            <!-- <a href="https://arxiv.org/abs/2502.00757" class="tag tag-arxiv">ARXIV</a>
+            <a href="https://github.com/J-Rosser-UK/AgentBreeder" class="tag tag-github">GITHUB</a> -->
         </div>
     </div>
 </div>
