@@ -8,8 +8,8 @@
     </div>
     <div class="publication-content">
         <h3 class="publication-title">
-            <a href="/projects/test_project.html" class="publication-link">
-                AgentBreeder: Mitigating the AI Safety Impact of Multi-Agent Scaffolds via Self-Improvement
+            <a href="projects/test_project.html" class="publication-link">
+                AgentBreeder: asdMitigating the AI Safety Impact of Multi-Agent Scaffolds via Self-Improvement
             </a>
         </h3>
         <div class="publication-venue">NeurIPS 2025 spotlight</div>
