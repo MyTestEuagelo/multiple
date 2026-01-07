@@ -3,7 +3,7 @@
 <!-- HYSTERESIS -->
 <div class="publication-card">
     <div class="publication-image">
-        <img src="/assets/Hysteresis.gif" alt="Loop forming animation">
+        <img src="assets/Hysteresis.gif" alt="Loop forming animation">
     </div>
     <div class="publication-content">
         <h3 class="publication-title">
@@ -60,7 +60,7 @@
 <!-- kalytera na phgainei sto pdf katey8eian oxi nemerte -->
 <div class="publication-card">
     <div class="publication-image">
-        <img src="../assets/vsm.png" alt="Thesis">
+        <img src="assets/vsm.png" alt="Thesis">
     </div>
     <div class="publication-content">
         <h3 class="publication-title">

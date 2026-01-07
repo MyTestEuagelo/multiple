@@ -4,7 +4,7 @@
 
 <div class="publication-card">
     <div class="publication-image">
-        <img src="../assets/Total_system_HVDC_SV_VSM.png" alt="HVDC VSM SV implementation">
+        <img src="assets/Total_system_HVDC_SV_VSM.png" alt="HVDC VSM SV implementation">
     </div>
     <div class="publication-content">
         <h3 class="publication-title">
@@ -39,7 +39,7 @@
 
 <div class="publication-card">
     <div class="publication-image">
-        <img src="../assets/plume.png" alt="Plume fem">
+        <img src="assets/plume.png" alt="Plume fem">
     </div>
     <div class="publication-content">
         <h3 class="publication-title">
