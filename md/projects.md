@@ -3,7 +3,7 @@
 <!-- HYSTERESIS -->
 <div class="publication-card">
     <div class="publication-image">
-        <img src="../assets/Hysteresis.gif" alt="Loop forming animation">
+        <img src="/assets/Hysteresis.gif" alt="Loop forming animation">
     </div>
     <div class="publication-content">
         <h3 class="publication-title">
@@ -31,7 +31,7 @@
 <!-- Course Project -->
 <div class="publication-card">
     <div class="publication-image">
-        <img src="../assets/Motor.gif" alt="Motor in femm">
+        <img src="assets/Motor.gif" alt="Motor in femm">
     </div>
     <div class="publication-content">
         <h3 class="publication-title">
