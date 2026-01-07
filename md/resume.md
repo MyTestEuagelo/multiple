@@ -1,19 +1,32 @@
-# Résumé
+# Resume
 
 
 
 <div class="timeline">
 
+<!-- <div class="timeline-item">
+    <span class="timeline-dot"></span>
+    <div class="timeline-header">
+      <span class="timeline-org">University of Patras</span>
+      <span class="timeline-role">MEng in Electrical and Computer Engineering</span>
+      <span class="timeline-dates">Oct 202 – <strong class="text-accent">Present</strong></span>
+    </div>
+    <div class="timeline-desc">Exploring the scaling laws of AI Safety.</div>
+  </div> -->
+
 <div class="timeline-item">
     <span class="timeline-dot"></span>
     <div class="timeline-header">
-      <span class="timeline-org">University of Oxford</span>
-      <span class="timeline-role">DPhil in Machine Learning</span>
-      <span class="timeline-dates">Oct 2024 – <strong class="text-accent">Present</strong></span>
+      <span class="timeline-org">University of Patras</span>
+      <span class="timeline-role">MEng in Electrical and Computer Engineering</span>
+      <span class="timeline-dates">Oct 2020 – Oct 2025
     </div>
-    <div class="timeline-desc">Exploring the scaling laws of AI Safety.</div>
+    <div class="timeline-meta">Patra, GR</div>
+    <div class="timeline-meta">Grade: 8.22/10.0</div>
   </div>
 
+
+<!-- 
   <div class="timeline-item">
     <span class="timeline-dot"></span>
     <div class="timeline-header">
@@ -78,4 +91,4 @@
     </div>
     <div class="timeline-meta">First Class • Academic Scholarship</div>
   </div>
-</div>
+</div> -->

@@ -7,7 +7,7 @@
     </div>
     <div class="publication-content">
         <h3 class="publication-title">
-            <a href="projects/test_project.html" class="publication-link">
+            <!-- <a href="projects/test_project.html" class="publication-link"> -->
                 Capturing the B-H Curve of a Transformer Core Material Using Arduino
             </a>
         </h3>
@@ -35,8 +35,7 @@
     </div>
     <div class="publication-content">
         <h3 class="publication-title">
-            <a href="projects/test_project.html" class="publication-link"            target="_blank"             
-            rel="noopener noreferrer">
+            <!-- <a href="projects/test_project.html" class="publication-link"> -->
                 Design and Finite Element Analysis of a Reluctance Machine
             </a>
         </h3>
