@@ -1,28 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  
-  <meta charset="UTF-8">
-  <title>Project 1</title>
-</head>
-<body>
-
-  <nav>
+    <nav>
     <a href="../index.html#about">← Back to Publications</a>
   </nav>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentBreeder: Mitigating the AI Safety Impact of Multi-Agent Scaffolds</title>
+    <meta name="description" content="AgentBreeder: Mitigating the AI Safety Impact of Multi-Agent Scaffolds via Self-Improvement">
+    <meta name="keywords" content="AI safety, multi-agent, scaffolds, AgentBreeder, research">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="/css/styles2.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        (function() {
+            try {
+                var saved = localStorage.getItem('theme');
+                var theme = saved === 'dark' || saved === 'light' ? saved : 'light';
+                document.documentElement.setAttribute('data-theme', theme);
+            } catch (e) {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                ams: { multlineWidth: '85%' },
+                tags: 'ams',
+                tagSide: 'right',
+                tagIndent: '.8em'
+            },
+            chtml: {
+                scale: 1.0,
+                displayAlign: 'center',
+                displayIndent: '0em'
+            },
+            svg: {
+                scale: 1.0,
+                displayAlign: 'center',
+                displayIndent: '0em'
+            },
+            output: {
+                font: 'mathjax-modern',
+                displayOverflow: 'overflow'
+            }
+        };
+    </script>
+</head>
+<body class="bg-global-bg text-global-text antialiased">
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-toggle-btn flex h-7 w-7 items-center justify-center rounded-md border border-accent-2/20 bg-accent-2/10 p-1 transition-colors hover:bg-accent-2/20" aria-label="Switch to dark theme">
+        <svg class="sun-icon h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+        </svg>
+        <svg class="moon-icon h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+        </svg>
+    </button>
+    <!-- Main Content -->
+    <main class="mx-auto max-w-3xl px-4 sm:px-8 pt-8">
+        <!-- Hero Section -->
+        <section id="hero" class="mb-16 text-center">
+            <h1 class="title mb-4">AgentBreeder</h1>
+            <p class="text-xl mb-6"><strong>Mitigating the AI Safety Impact of Multi-Agent Scaffolds via Self-Improvement</strong></p>
 
-  <hr>
+            <div class="authors mb-4">
+                <ul class="list-inline">
+                    <li><a href="https://jrosser.co.uk">J Rosser</a></li>
+                    <li><a href="https://www.jakobfoerster.com/">Jakob Foerster</a></li>
+                </ul>
+            </div>
 
-  <h1>Project 1</h1>
+            <div class="affiliations mb-4">
+                <ul class="list-inline">
+                    <li><a href="https://www.ox.ac.uk/"><img src="assets/oxford_logo.png" height="48px" alt="Oxford"></a></li>
+                    <li><a href="https://foersterlab.com/"><img src="assets/flair_logo.png" height="48px" alt="FLAIR"></a></li>
+                </ul>
+            </div>
 
-  <p>
-    This is a detailed page for Project 1.
-  </p>
+            <div class="conference mb-6">
+                <span class="conference-name">🏆 NeurIPS 2025 Spotlight 🏆</span>
+            </div>
 
-  <p>
-    If you can see this page on GitHub Pages,
-    EVERYTHING IS WORKING CORRECTLY.
-  </p>
+            <div class="action-buttons">
+                <ul class="nav nav-pills nav-justified">
+                    <li><a href="https://arxiv.org/abs/2502.00757"><img src="assets/thumbnail.jpg" height="60px" alt="Paper"><h4>Paper</h4></a></li>
+                    <li><a href="https://github.com/jrosseruk/AgentBreeder"><span class="icon icon-github" aria-hidden="true"></span><h4>Code</h4></a></li>
+                    <li><a href="https://iclr.cc/media/iclr-2025/Slides/10000479.pdf"><img src="assets/Google_Slides_logo_(2014-2020).svg" height="60px" alt="Slides"><h4>Slides</h4></a></li>
+                  
+                </ul>
+            </div>
+        </section>
 
+
+        <!-- Abstract Section -->
+        
+        <section id="abstract" class="mb-16">
+
+            <div class="prose">
+                <h2>Abstract</h2>
+                <figure >
+                    <img src="assets/AgentBreederDiagramJPG.jpg" alt="AgentBreeder overview diagram">
+                    <figcaption>Figure 1: Overview of AgentBreeder's evolutionary search over multi-agent scaffolds.</figcaption>
+                </figure>
+                
+                <p>Scaffolding Large Language Models (LLMs) into multi-agent systems often improves performance on complex tasks, but the safety impact of such scaffolds has not been thoroughly explored. We introduce <strong>AgentBreeder</strong>, a framework for multi-objective self-improving evolutionary search over scaffolds, specifically targeting scaffolds' safety impact on large language models in multi-agent systems.</p>
+
+                <p>We evaluate discovered scaffolds on widely recognized reasoning, mathematics, and safety benchmarks. In <strong>'blue' mode</strong>, we see a <strong>79.4% average uplift</strong> in safety benchmark performance while maintaining or improving capability scores. In <strong>'red' mode</strong>, we find adversarially weak scaffolds emerging concurrently with capability optimization. Our work demonstrates the risks of multi-agent scaffolding and provides a framework for mitigating them.</p>
+            </div>
+        </section>
+
+        <!-- Key Achievements Section -->
+        <section id="achievements" class="mb-16">
+            <div class="prose">
+                <h2>Key Achievements</h2>
+                <ul>
+                    <li>🎯 <strong>79.4% average uplift</strong> in safety benchmark performance while maintaining capability</li>
+                    <li>🔬 <strong>First framework</strong> for multi-objective evolutionary search over multi-agent scaffolds</li>
+                    <li>⚖️ <strong>Balanced optimization</strong> of safety and capability through Pareto optimization</li>
+                    <li>🔴 <strong>Red-team insights</strong> revealing how capable scaffolds can become highly vulnerable</li>
+                    <li>📊 <strong>Comprehensive evaluation</strong> across DROP, MMLU, GPQA, and SaladData benchmarks</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Operational Modes Section -->
+        <section id="modes" class="mb-16">
+            <div class="prose">
+                <h2>Operational Modes</h2>
+                <p>AgentBreeder operates in three distinct modes, each serving different research and deployment needs:</p>
+
+                <h3>🔵 BlueAgentBreeder (Defense)</h3>
+                <ul>
+                    <li><strong>Objective</strong>: Maximize both safety and capability</li>
+                    <li><strong>Use case</strong>: Develop robust, safe multi-agent systems</li>
+                    <li><strong>Result</strong>: 79.4% average safety improvement while maintaining capability</li>
+                </ul>
+                <p>BlueAgentBreeder focuses on creating scaffolds that enhance both the safety and performance of multi-agent systems. This mode is ideal for production deployments where safety is paramount.</p>
+
+                <h3>🔴 RedAgentBreeder (Attack)</h3>
+                <ul>
+                    <li><strong>Objective</strong>: Maximize capability while minimizing safety</li>
+                    <li><strong>Use case</strong>: Red-team testing and vulnerability discovery</li>
+                    <li><strong>Result</strong>: Reveals how scaffolding can inadvertently expose safety weaknesses</li>
+                </ul>
+                <p>RedAgentBreeder serves as an adversarial testing tool, helping researchers understand potential vulnerabilities in multi-agent scaffolds. This mode is crucial for identifying safety risks before deployment.</p>
+
+                <h3>🎯 CapableAgentBreeder (Capability)</h3>
+                <ul>
+                    <li><strong>Objective</strong>: Maximize capability only</li>
+                    <li><strong>Use case</strong>: Baseline comparison and pure performance optimization</li>
+                    <li><strong>Result</strong>: Competitive performance with existing approaches</li>
+                </ul>
+                <p>CapableAgentBreeder provides a baseline for comparison by focusing solely on performance optimization without safety constraints.</p>
+            </div>
+        </section>
+        
+
+        <!-- Citation Section -->
+        <section id="citation" class="mb-16">
+            
+                <h3>Citation</h3>
+                <div class="citation-box">
+                    <textarea id="bibtex" class="bibtex-textarea" readonly>
+@inproceedings{rosser2025agentbreeder,
+  title={AgentBreeder: Mitigating the AI Safety Impact of Multi-Agent Scaffolds via Self-Improvement},
+  author={Rosser, J and Foerster, Jakob},
+  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+  year={2025},
+  note={NeurIPS 2025 Spotlight}
+}</textarea>
+                </div>
+        
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <div class="mx-auto max-w-3xl px-4 sm:px-8 py-8 text-center text-sm opacity-75">
+        <p>The website template was borrowed from <a href="http://easyacademicwebsite.github.io">Easy Academic Website Template</a> and <a href="http://jonbarron.info/">Jon Barron</a></p>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
