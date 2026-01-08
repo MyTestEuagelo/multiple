@@ -114,3 +114,31 @@
     </div>
 </div>
 
+
+
+
+<!-- DIFFERENTIAL DRIVE MOTOR -->
+<!-- Course Project -->
+<div class="publication-card">
+    <div class="publication-image">
+        <img src="assets/Tunel.gif" alt="Motor in femm">
+    </div>
+    <div class="publication-content">
+        <h3 class="publication-title">
+            <!-- <a href="projects/test_project.html" class="publication-link"> -->
+                Monitoring and Control of Propane Levels in a Tunnel
+            </a>
+        </h3>
+        <div class="publication-venue">Course Project</div>
+        <div class="publication-description">Implementing a monitoring and control system using LabVIEW for safe propane levels in a tunel.</div>
+        <!-- <div class="publication-year">2025</div> -->
+        <div class="publication-tags">
+            <span class="tag tag-safety">Labview</span>
+            <span class="tag tag-conference">arduino</span>
+            <span class="tag tag-arxiv">autocad</span>
+            <span class="tag tag-workshop">blender</span>
+            <!-- <a href="https://arxiv.org/abs/2502.00757" class="tag tag-arxiv">ARXIV</a> -->
+            <!-- <a href="https://github.com/J-Rosser-UK/AgentBreeder" class="tag tag-github">GITHUB</a> -->
+        </div>
+    </div>
+</div>
