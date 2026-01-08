@@ -63,8 +63,9 @@
     </div>
     <div class="publication-content">
         <h3 class="publication-title">
-            <a href="https://nemertes.library.upatras.gr/items/81c60c6a-3bd4-4f67-8ef5-f61a1edc67b2" class="publication-link"            target="_blank"             
-            rel="noopener noreferrer">
+                <a href="projects/thesis.html" class="publication-link">
+            <!-- <a href="https://nemertes.library.upatras.gr/items/81c60c6a-3bd4-4f67-8ef5-f61a1edc67b2" class="publication-link"            target="_blank"             
+            rel="noopener noreferrer"> -->
                 Control Design of HVDC Link with Virtual Synchronous Generator and Implementation on Real-Time Simulator
             </a>
         </h3>
