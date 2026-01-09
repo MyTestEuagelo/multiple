@@ -292,6 +292,7 @@ class MarkdownLoader {
                     const markdown = await response.text();
                     const html = this.parseMarkdown(markdown);
                     contentElement.innerHTML = html;
+<<<<<<< HEAD
                     
                     
                     // Initialize "Load more projects" AFTER markdown loads
@@ -299,6 +300,12 @@ class MarkdownLoader {
                     // initLoadMoreProjects();
                     // }
 
+=======
+                    // Initialize "Load more projects" AFTER markdown loads
+                    if (section === 'projects') {
+                    initLoadMoreProjects();
+                    }
+>>>>>>> f7789a1186f2b15609008aa0b5c8113f81a724bf
 
                     // Apply hover effect to new content
                     if (typeof window.applyBHoverEffect === 'function') {
@@ -387,6 +394,7 @@ class MarkdownLoader {
 
 
 // LOAD MORE  "Load more projects"
+<<<<<<< HEAD
 // function initLoadMoreProjects() {
 //   const projects = document.querySelectorAll(".publication-card");
 //   const loadMoreBtn = document.getElementById("load-more");
@@ -417,6 +425,38 @@ class MarkdownLoader {
 //     }
 //   };
 // }
+=======
+function initLoadMoreProjects() {
+  const projects = document.querySelectorAll(".publication-card");
+  const loadMoreBtn = document.getElementById("load-more");
+
+  if (!projects.length || !loadMoreBtn) return;
+
+  const step = 2;
+  let visibleCount = 2;
+
+  projects.forEach((project, index) => {
+    project.style.display = index < visibleCount ? "block" : "none";
+  });
+
+  loadMoreBtn.style.display =
+    projects.length > visibleCount ? "block" : "none";
+
+  loadMoreBtn.onclick = () => {
+    visibleCount += step;
+
+    projects.forEach((project, index) => {
+      if (index < visibleCount) {
+        project.style.display = "block";
+      }
+    });
+
+    if (visibleCount >= projects.length) {
+      loadMoreBtn.style.display = "none";
+    }
+  };
+}
+>>>>>>> f7789a1186f2b15609008aa0b5c8113f81a724bf
 
 
 
