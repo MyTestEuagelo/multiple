@@ -27,7 +27,7 @@ html {
 [data-theme="dark"] {
     --color-global-bg: oklch(23.64% 0.0045 248);
     --color-global-text: oklch(83.54% 0 264);
-    --color-link: oklch(77.067% 0.08355 347.736);
+    --color-link: oklch(89.47% 0.1032 181.805);
     --color-accent: #5ff26b;
     --color-accent-2: oklch(94.66% 0 0);
     --color-quote: oklch(94.8% 0.106 136.49);
@@ -949,6 +949,7 @@ html {
 .prose .publication-title {
     margin-top: 0 !important;
     margin-bottom: 0.5rem;
+    
 }
 
 .publication-link {
@@ -1176,4 +1177,22 @@ html {
         margin-left: 0;
         opacity: 0.8;
     }
+}
+
+
+
+.load-more-btn {
+  margin: 2rem auto 0;
+  display: block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.load-more-btn:hover {
+  opacity: 0.9;
 }

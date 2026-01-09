@@ -292,6 +292,11 @@ class MarkdownLoader {
                     const markdown = await response.text();
                     const html = this.parseMarkdown(markdown);
                     contentElement.innerHTML = html;
+                    // Initialize "Load more projects" AFTER markdown loads
+                    if (section === 'projects') {
+                    initLoadMoreProjects();
+                    }
+
                     // Apply hover effect to new content
                     if (typeof window.applyBHoverEffect === 'function') {
                         window.applyBHoverEffect(contentElement);
@@ -370,6 +375,71 @@ class MarkdownLoader {
 }
 
 
+
+
+
+
+
+
+
+
+// LOAD MORE  "Load more projects"
+function initLoadMoreProjects() {
+  const projects = document.querySelectorAll(".publication-card");
+  const loadMoreBtn = document.getElementById("load-more");
+
+  if (!projects.length || !loadMoreBtn) return;
+
+  const step = 2;
+  let visibleCount = 2;
+
+  projects.forEach((project, index) => {
+    project.style.display = index < visibleCount ? "block" : "none";
+  });
+
+  loadMoreBtn.style.display =
+    projects.length > visibleCount ? "block" : "none";
+
+  loadMoreBtn.onclick = () => {
+    visibleCount += step;
+
+    projects.forEach((project, index) => {
+      if (index < visibleCount) {
+        project.style.display = "block";
+      }
+    });
+
+    if (visibleCount >= projects.length) {
+      loadMoreBtn.style.display = "none";
+    }
+  };
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Initialize all functionality when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize all components
@@ -396,8 +466,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Console message for developers
     console.log('🌵 Portfolio site loaded successfully!');
-    console.log('🎉 Click the logo for a party surprise!');
-    console.log('Built with inspiration from astro-theme-cactus');
+    console.log('Built with inspiration from J Rosser');
 });
 
 // Handle page visibility changes (pause animations when not visible)
@@ -438,3 +507,8 @@ prefersReducedMotion.addEventListener('change', () => {
         document.documentElement.style.setProperty('scroll-behavior', 'smooth');
     }
 });
+
+
+
+
+
