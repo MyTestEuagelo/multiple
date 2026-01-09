@@ -1180,20 +1180,18 @@ html {
 }
 
 
-<<<<<<< HEAD
-/* Load more */
-=======
 
->>>>>>> f7789a1186f2b15609008aa0b5c8113f81a724bf
+/* Load more */
 .load-more-btn {
   margin: 2rem auto 0;
   display: block;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   font-weight: 500;
-  background: var(--accent-color);
-  color: white;
-  border: none;
+  background-color: color-mix(in srgb, #8867ff 15%, transparent);
+  /* border-color: #fff7f7; */
+  color: #af67ff;
+  border: var(--color-accent);
   cursor: pointer;
 }
 
