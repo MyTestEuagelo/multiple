@@ -293,12 +293,13 @@ class MarkdownLoader {
                     const html = this.parseMarkdown(markdown);
                     contentElement.innerHTML = html;
 
+
+
+
                     // Initialize "Load more projects" AFTER markdown loads
                     if (section === 'projects') {
                         initLoadMoreProjects();
                     }
-
-
 
 
 
@@ -316,6 +317,7 @@ class MarkdownLoader {
                 lastError = error;
                 // Continue to next path
             }
+
         }
 
         // If we get here, all paths failed

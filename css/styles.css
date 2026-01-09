@@ -21,6 +21,9 @@ html {
     --color-border: #e4dcee;
     --color-card-bg: rgba(255, 255, 255, 0.8);
     --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-load: color-mix(in srgb, #af67ff 15%, transparent);
+    --color-load_border: #c890d3;
+    --color-load_text: #bc8ef0;
 }
 
 /* Dark theme colors */
@@ -34,6 +37,10 @@ html {
     --color-border: #c3ffb857;
     --color-card-bg: rgba(31, 41, 55, 0.8);
     --color-shadow: rgba(0, 0, 0, 0.3);
+    --color-load: color-mix(in srgb, #9df5fc 15%, transparent);
+    --color-load_border: #90d3d0;
+    --color-load_text: #8ed4f0;
+    
 }
 
 /* Base typography */
@@ -1188,18 +1195,25 @@ html {
 
 /* Load more */
 .load-more-btn {
+ font-family: inherit;
   margin: 2rem auto 0;
-  display: block;
+  display: inline-block;
   padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  border-radius: 80px;
   font-weight: 500;
-  background-color: color-mix(in srgb, #8867ff 15%, transparent);
-  /* border-color: #fff7f7; */
-  color: #af67ff;
-  border: var(--color-accent);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.025em;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid;
+  background-color: var(--color-load);
+  transition: opacity 0.2s ease;
+  border-color: var(--color-load_border);
+  color: var(--color-load_text);
   cursor: pointer;
 }
 
 .load-more-btn:hover {
-  opacity: 0.9;
+  opacity: 0.7;
 }
