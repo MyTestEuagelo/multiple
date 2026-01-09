@@ -292,12 +292,14 @@ class MarkdownLoader {
                     const markdown = await response.text();
                     const html = this.parseMarkdown(markdown);
                     contentElement.innerHTML = html;
-                    
-                    
+
                     // Initialize "Load more projects" AFTER markdown loads
-                    // if (section === 'projects') {
-                    // initLoadMoreProjects();
-                    // }
+                    if (section === 'projects') {
+                        initLoadMoreProjects(contentElement);
+                    }
+
+
+
 
 
                     // Apply hover effect to new content
@@ -387,36 +389,36 @@ class MarkdownLoader {
 
 
 // LOAD MORE  "Load more projects"
-// function initLoadMoreProjects() {
-//   const projects = document.querySelectorAll(".publication-card");
-//   const loadMoreBtn = document.getElementById("load-more");
+function initLoadMoreProjects() {
+  const projects = document.querySelectorAll(".publication-card");
+  const loadMoreBtn = document.getElementById("load-more");
 
-//   if (!projects.length || !loadMoreBtn) return;
+  if (!projects.length || !loadMoreBtn) return;
 
-//   const step = 2;
-//   let visibleCount = 2;
+  const step = 2;
+  let visibleCount = 2;
 
-//   projects.forEach((project, index) => {
-//     project.style.display = index < visibleCount ? "block" : "none";
-//   });
+  projects.forEach((project, index) => {
+    project.style.display = index < visibleCount ? "flex" : "none";
+  });
 
-//   loadMoreBtn.style.display =
-//     projects.length > visibleCount ? "block" : "none";
+  loadMoreBtn.style.display =
+    projects.length > visibleCount ? "block" : "none";
 
-//   loadMoreBtn.onclick = () => {
-//     visibleCount += step;
+  loadMoreBtn.onclick = () => {
+    visibleCount += step;
 
-//     projects.forEach((project, index) => {
-//       if (index < visibleCount) {
-//         project.style.display = "block";
-//       }
-//     });
+    projects.forEach((project, index) => {
+      if (index < visibleCount) {
+        project.style.display = "flex";
+      }
+    });
 
-//     if (visibleCount >= projects.length) {
-//       loadMoreBtn.style.display = "none";
-//     }
-//   };
-// }
+    if (visibleCount >= projects.length) {
+      loadMoreBtn.style.display = "none";
+    }
+  };
+}
 
 
 
