@@ -295,7 +295,7 @@ class MarkdownLoader {
 
                     // Initialize "Load more projects" AFTER markdown loads
                     if (section === 'projects') {
-                        initLoadMoreProjects(contentElement);
+                        initLoadMoreProjects();
                     }
 
 
