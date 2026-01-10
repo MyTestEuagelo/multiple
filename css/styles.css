@@ -25,7 +25,6 @@ html {
     --color-load_border: #c890d3;
     --color-load_text: #bc8ef0;
 }
-
 /* Dark theme colors */
 [data-theme="dark"] {
     --color-global-bg: oklch(23.64% 0.0045 248);
@@ -42,6 +41,7 @@ html {
     --color-load_text: #8ed4f0;
     
 }
+
 
 /* Base typography */
 body {

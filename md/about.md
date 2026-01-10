@@ -43,4 +43,4 @@
 
 
 
-I am a graduate in Electrical and Computer Engineering from the University of Patras, Greece.
+I am a graduate in Electrical and Computer Engineering from the University of Patras, Greece. 
