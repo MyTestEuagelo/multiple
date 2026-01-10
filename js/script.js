@@ -392,7 +392,7 @@ class MarkdownLoader {
 
 // LOAD MORE  "Load more projects"
 function initLoadMoreProjects() {
-  const projects = document.querySelectorAll(".publication-card");
+  const projects = document.querySelectorAll(".project-card");
   const loadMoreBtn = document.getElementById("load-more");
 
   if (!projects.length || !loadMoreBtn) return;
