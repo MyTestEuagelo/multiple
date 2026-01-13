@@ -504,7 +504,7 @@ body {
 }
 
 .prose a {
-    color: var(--color-link);
+    /* color: var(--color-link); */
     text-decoration: underline;
     text-underline-offset: 2px;
 }
