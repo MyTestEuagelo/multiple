@@ -1,5 +1,8 @@
 # Projects
 
+
+
+
 <!-- Thesis Project -->
 <!-- kalytera na phgainei sto pdf katey8eian oxi nemerte -->
 <div class="project-card">
@@ -9,13 +12,11 @@
     <div class="project-content">
         <h3 class="project-title">
                 <a href="projects/thesis.html" class="publication-link">
-            <!-- <a href="https://nemertes.library.upatras.gr/items/81c60c6a-3bd4-4f67-8ef5-f61a1edc67b2" class="publication-link"            target="_blank"             
-            rel="noopener noreferrer"> -->
                 Control Design of HVDC Link with Virtual Synchronous Generator and Implementation on Real-Time Simulator
             </a>
         </h3>
         <div class="project-venue">Thesis Project</div>
-        <div class="project-description">Designing a Virtual Inertia control structure, with current and voltage controllers, for an HVDC link and implementing an experimental setup using two Typhoon HIL, two Programmable Power Supplies, a Smart Meter, and an HVDC Line Module.</div>
+        <div class="project-description">Designed a Virtual Inertia control structure, with current and voltage controllers, for an HVDC link and implemented an experimental setup using two Typhoon HIL, two Programmable Power Supplies, a Smart Meter, and an HVDC Line Module.</div>
         <!-- <div class="publication-year">2025</div> -->
         <div class="project-tags">
             <span class="tag tag-safety">Matlab/simulink</span>
@@ -62,7 +63,7 @@
             </a>
         </h3>
         <div class="project-venue">Course Project</div>
-        <div class="project-description">Designing a Synchronous Reluctance Machine in AutoCAD and analyzing it using the Finite Element Method to calculate flux, EMF, losses and other related performance parameters.</div>
+        <div class="project-description">Designed a Synchronous Reluctance Machine in AutoCAD and analyzed it using the Finite Element Method to calculate flux, EMF, losses and other related performance parameters.</div>
         <!-- <div class="publication-year">2025</div> -->
         <div class="project-tags">
             <span class="tag tag-safety">FEM</span>
@@ -101,7 +102,7 @@
             </a>
         </h3>
         <div class="project-venue">Course Project</div>
-        <div class="project-description">Implementing state estimation for a differential drive robot using Dead Reckoning and Adaptive Monte Carlo Localization (AMCL) via Particle Filters.</div>
+        <div class="project-description">Implemented state estimation for a differential drive robot using Dead Reckoning and Adaptive Monte Carlo Localization (AMCL) via Particle Filters.</div>
         <!-- <div class="publication-year">2025</div> -->
         <div class="project-tags">
             <span class="tag tag-safety">ROS</span>
@@ -125,13 +126,15 @@
             </a>
         </h3>
         <div class="project-venue">Course Project</div>
-        <div class="project-description">Implementing a monitoring and control system using LabVIEW for safe propane levels in a tunel.</div>
+        <div class="project-description">Implemented a monitoring and control system using LabVIEW for safe propane levels in a tunel.</div>
         <!-- <div class="publication-year">2025</div> -->
         <div class="project-tags">
             <span class="tag tag-safety">Labview</span>
             <span class="tag tag-conference">arduino</span>
             <span class="tag tag-arxiv">autocad</span>
-            <span class="tag tag-workshop">blender</span>
         </div>
     </div>
 </div>
+
+
+<!-- READ MORE KALYTERA  -->

@@ -24,6 +24,7 @@ html {
     --color-load: color-mix(in srgb, #af67ff 15%, transparent);
     --color-load_border: #c890d3;
     --color-load_text: #bc8ef0;
+    --color-name: #9a51e7;
 }
 /* Dark theme colors */
 [data-theme="dark"] {
@@ -39,6 +40,7 @@ html {
     --color-load: color-mix(in srgb, #9df5fc 15%, transparent);
     --color-load_border: #90d3d0;
     --color-load_text: #8ed4f0;
+    --color-name: #a2f1a9;
     
 }
 
@@ -172,12 +174,14 @@ body {
 
 /* Custom component styles */
 .title {
-    color: var(--color-accent-2);
+    color: var(--color-name) !important;
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 2rem;
 }
-
+.title .intro {
+    color: var(--color-accent-2) !important;
+}
 .cactus-link {
     color: var(--color-link);
     text-decoration: underline;
@@ -966,13 +970,13 @@ html {
 
 .publication-link {
     color: var(--color-accent-2);
-    text-decoration: none;
+    text-decoration: none  !important;
     transition: opacity 0.2s ease;
 }
 
 .publication-link:hover {
     color: var(--color-accent);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .publication-venue {
@@ -1292,7 +1296,7 @@ html {
 
 .project-link:hover {
     color: var(--color-accent);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .project-venue {

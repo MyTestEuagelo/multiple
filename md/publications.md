@@ -8,7 +8,7 @@
     </div>
     <div class="publication-content">
         <h3 class="publication-title">
-            <a href="https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Combined%20Synchronverter-VSM%20based%20HVDC%20%20transmission%20design%20with%20Power-Hardware-In-the-Loop%20%20(PHIL)%20implementation" 
+            <a href="https://ieeexplore.ieee.org/document/11314231" 
             class="publication-link"
             target="_blank"             
             rel="noopener noreferrer">                    
