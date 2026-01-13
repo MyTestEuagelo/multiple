@@ -300,8 +300,11 @@ class MarkdownLoader {
                     // Initialize "Load more projects" AFTER markdown loads
                     if (section === 'projects') {
                         initLoadMoreProjects();
+                        initCardAnimations(); //to add animations
                     }
-
+                    if (section === 'publications') {
+                        initCardAnimations();
+                    }
 
 
                     // Apply hover effect to new content
@@ -518,5 +521,24 @@ prefersReducedMotion.addEventListener('change', () => {
 
 
 
+// Add animation to publication and project cards when scrolled into view
+function initCardAnimations() {
+    const cards = document.querySelectorAll('.publication-card, .project-card');
 
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible'); // add the class to fade/slide in
+                observer.unobserve(entry.target); // stop observing once visible
+            }
+        });
+    }, {
+        threshold: 0.1 // triggers when 10% of card is visible
+    });
+
+    cards.forEach(card => observer.observe(card));
+}
+
+// Call it after your cards are loaded (e.g., after initLoadMoreProjects)
+document.addEventListener('DOMContentLoaded', initCardAnimations);
 
