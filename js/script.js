@@ -470,13 +470,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Initialize party hat explosion feature
-    new PartyHatExplosion();
+    // new PartyHatExplosion();
     
     // Add loading state management
     document.body.classList.add('loaded');
     
     // Console message for developers
-    console.log('🌵 Portfolio site loaded successfully!');
     console.log('Built with inspiration from J Rosser');
 });
 
