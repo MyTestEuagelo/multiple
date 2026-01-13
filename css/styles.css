@@ -603,12 +603,8 @@ body {
     padding: 1.5rem;
     backdrop-filter: blur(8px);
     transition: opacity 0.2s ease;
+    
 }
-
-
-
-
-
 
 .project-card:hover {
     transform: translateY(-2px);
@@ -925,7 +921,17 @@ html {
     backdrop-filter: blur(8px);
     transition: opacity 0.2s ease;
     gap: 1.5rem;
+
+    opacity: 0;
+    transform: translateY(20px); /* start slightly below */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
+.publication-card.visible {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
 
 .publication-card:hover {
     transform: translateY(-2px);
@@ -1241,12 +1247,18 @@ html {
     padding: 1.5rem;
     margin-bottom: 2rem;
     backdrop-filter: blur(8px);
-    transition: opacity 0.2s ease;
+    transition: opacity 0.6s ease;
     gap: 1.5rem;
+}
+
+.project-card.visible {
+    opacity: 1;
+    transform: translateY(0); 
 }
 
 .project-card:hover {
     transform: translateY(-2px);
+    transition: opacity 0.6s ease;
     box-shadow: 0 8px 25px var(--color-shadow);
 }
 
@@ -1397,12 +1409,9 @@ html {
 
 
 /* For animation when publication/project cards come into view */
-.publication-card, .project-card {
+.project-card {
     opacity: 0;
     transform: translateY(20px); /* start slightly below */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
-.publication-card.visible, .project-card.visible {
-    opacity: 1;
-    transform: translateY(0); /* slide up to normal */
-}
+
