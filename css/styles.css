@@ -1216,6 +1216,7 @@ html {
   border-color: var(--color-load_border);
   color: var(--color-load_text);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .load-more-btn:hover {
