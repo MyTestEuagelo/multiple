@@ -33,7 +33,8 @@
         <img src="assets/Hysteresis.gif" alt="Loop forming animation">
     </div>
     <div class="project-content">
-        <h3 class="project-title">Capturing the B-H Curve of a Transformer Core Material Using Arduino
+        <h3 class="project-title">
+        <a href="projects/hysteresis.html" class="publication-link">Capturing the B-H Curve of a Transformer Core Material Using Arduino
             </a>
         </h3>
         <div class="project-venue">Home Project</div>
@@ -59,7 +60,8 @@
         <img src="assets/Motor.gif" alt="Motor in femm">
     </div>
     <div class="project-content">
-        <h3 class="project-title">Design and Finite Element Analysis of a Reluctance Machine
+        <h3 class="project-title">
+        <a href="projects/SynRM.html" class="publication-link">Design and Finite Element Analysis of a Reluctance Machine
             </a>
         </h3>
         <div class="project-venue">Course Project</div>
@@ -98,6 +100,7 @@
     </div>
     <div class="project-content">
         <h3 class="project-title">
+        <a href="projects/ddrobot.html" class="publication-link">
                 Modeling, Control, and State Estimation for a  Differential Drive Robot.
             </a>
         </h3>
@@ -122,7 +125,8 @@
         <img src="assets/Tunel.gif" alt="Tunel apparatus">
     </div>
     <div class="project-content">
-        <h3 class="project-title">Monitoring and Control of Propane Levels in a Tunnel
+        <h3 class="project-title">
+        <a href="projects/tunel.html" class="publication-link">Monitoring and Control of Propane Levels in a Tunnel
             </a>
         </h3>
         <div class="project-venue">Course Project</div>

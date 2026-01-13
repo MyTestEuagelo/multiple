@@ -42,5 +42,11 @@
 </div>
 
 
+I am a recent graduate of the University of Patras, Greece, in Electrical and Computer Engineering, with a strong interest in control design for modern power systems. My main academic interest lies in control design for power systems, with a particular focus on **HVDC** systems and **Virtual Inertia**, topics I explored during my diploma thesis. 
 
-I am a graduate in Electrical and Computer Engineering from the University of Patras, Greece. 
+<!-- As modern power grids integrate increasing levels of renewable energy, concepts such as virtual inertia and power-electronics-based HVDC links play a critical role in maintaining system stability, flexibility, and resilience—making them an active and highly relevant area of research. -->
+
+What excites me most is seeing theoretical concepts transition into real implementations, whether through **real-time simulations**, **laboratory setups**, or **Hardware-in-the-Loop** platforms. Bridging the gap between analysis, control theory, and practical systems is what motivates my work. 
+
+Outside of engineering, I enjoy watching movies, with *"Interstellar"* being one of my all-time favorites.
+
