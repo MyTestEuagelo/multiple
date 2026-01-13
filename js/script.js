@@ -280,7 +280,7 @@ class MarkdownLoader {
             `./md/${section}.md`,           // Relative to current directory
             `md/${section}.md`,             // Direct relative path
             `${section}.md`,             // Absolute from root (for some GitHub Pages setups)
-            `/md/${section}.md`            // Fallback to root (for some hosting setups)
+            `../md/${section}.md`            // Fallback to root (for some hosting setups)
         ];
 
         let lastError = null;
