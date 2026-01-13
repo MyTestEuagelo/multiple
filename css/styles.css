@@ -13,7 +13,7 @@ html {
 :root {
     /* Light theme colors (inspired by astro-theme-cactus) */
     --color-global-bg: oklch(98.972% 0.01416 169.704);
-    --color-global-text: oklch(26.99% 0.0096 235.05);
+    --color-global-text: oklch(26.624% 0.00949 248.261);
     --color-link: oklch(58.333% 0.07556 183.758);
     --color-accent: #af67ff;
     --color-accent-2: oklch(18.15% 0 0);
@@ -35,11 +35,11 @@ html {
     --color-accent-2: oklch(94.66% 0 0);
     --color-quote: oklch(94.8% 0.106 136.49);
     --color-border: #c3ffb857;
-    --color-card-bg: rgba(31, 41, 55, 0.8);
+    --color-card-bg: rgba(33, 47, 51, 0.664);
     --color-shadow: rgba(0, 0, 0, 0.3);
-    --color-load: color-mix(in srgb, #9df5fc 15%, transparent);
-    --color-load_border: #90d3d0;
-    --color-load_text: #8ed4f0;
+    --color-load: color-mix(in srgb, #9dfcb5 15%, transparent);
+    --color-load_border: #95d390;
+    --color-load_text: #8ef09b;
     --color-name: #a2f1a9;
     
 }
@@ -1202,17 +1202,14 @@ html {
  font-family: inherit;
   margin: 2rem auto 0;
   display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border-radius: 80px;
   font-weight: 500;
-  font-weight: 600;
   font-size: 0.75rem;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.015em;
   padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
+  border-radius: 0.35rem;
   border: 1px solid;
   background-color: var(--color-load);
-  transition: opacity 0.2s ease;
+  transition: opacity 0.15s ease;
   border-color: var(--color-load_border);
   color: var(--color-load_text);
   cursor: pointer;
@@ -1225,7 +1222,7 @@ html {
 
 
 .thesis-page {
-    padding-top: 5rem; /* instead of 8rem */
+    padding-top: 3rem; /* instead of 8rem */
 }
 
 
@@ -1361,3 +1358,40 @@ html {
         justify-content: center;
     }
 }
+
+
+/* .about-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 0.1rem 0.2rem;  
+    border-radius: 0.5rem;
+
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+} */
+/* .about-link:hover {
+    background-color: color-mix(
+        in srgb,
+        var(--color-name) 10%,
+        transparent
+    );
+    transform: translateY(-2px);
+}  
+    */
+
+
+
+
+
+.about-link {
+    transition:
+        background-color 0.2s ease,
+        transform 0.15s ease;
+}
+
+.about-link:hover {
+    transform: translateY(-2px);
+} 
+   
