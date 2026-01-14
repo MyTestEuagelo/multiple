@@ -385,7 +385,91 @@ class MarkdownLoader {
     }
 }
 
+class MarkdownLoader_NEW {
+    constructor() {
+        this.init();
+    }
 
+    init() {
+        // Find all elements that request markdown
+        const mdContainers = document.querySelectorAll('[data-md]');
+
+        mdContainers.forEach(el => {
+            const section = el.dataset.md;
+            const contentElement =
+                el.querySelector('.md-content') ||
+                document.getElementById(`${section}-content`);
+
+            if (contentElement) {
+                this.loadMarkdown(section, contentElement);
+            }
+        });
+    }
+
+    async loadMarkdown(section, contentElement) {
+        const pathsToTry = [
+            `./md/${section}.md`,           // Relative to current directory
+            `md/${section}.md`,             // Direct relative path
+            `${section}.md`,             // Absolute from root (for some GitHub Pages setups)
+            `../md/${section}.md`            // Fallback to root (for some hosting setups)
+        ];
+
+        let lastError = null;
+
+        for (const path of pathsToTry) {
+            try {
+                const response = await fetch(path);
+                if (!response.ok) throw new Error(response.statusText);
+
+                const markdown = await response.text();
+                contentElement.innerHTML = this.parseMarkdown(markdown);
+
+                // Post-load hooks
+                if (section === 'projects') {
+                    initLoadMoreProjects();
+                    initCardAnimations();
+                }
+
+                if (section === 'publications') {
+                    initCardAnimations();
+                }
+
+                return;
+            } catch (err) {
+                lastError = err;
+            }
+        }
+
+        contentElement.innerHTML = `
+            <p style="opacity:.6">
+              Failed to load ${section}.md
+            </p>`;
+        console.error(lastError);
+    }
+
+    parseMarkdown(markdown) {
+        let html = markdown;
+
+        html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
+        html = html.replace(/^## (.*$)/gim, '<h2 class="title">$1</h2>');
+        html = html.replace(/^# (.*$)/gim, '<h1 class="title">$1</h1>');
+
+        html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+        html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
+        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+
+        html = html.replace(/^\s*- (.+)$/gm, '<li>$1</li>');
+        html = html.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+
+        html = html.split(/\n\s*\n/)
+            .map(p => p.startsWith('<') ? p : `<p>${p}</p>`)
+            .join('\n');
+
+        html = html.replace(/^---$/gm, '<hr>');
+
+        return html;
+    }
+}
 
 
 
@@ -463,6 +547,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     new LazyImageLoader();
     new MarkdownLoader();
+    new MarkdownLoader_NEW();
     
     // Apply hover effect to all 'b' letters on initial content
     if (typeof window.applyBHoverEffect === 'function') {
