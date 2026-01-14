@@ -54,7 +54,7 @@ And this is the second line.</p> -->
     <!-- horizontal divider BELOW -->
     <div style="height:1.5px; width:100%; background: currentColor; opacity:0.15;"></div>
     - This is a test
-    <img title="a title" style="width: 540px; height: auto; display: block; margin: 0 auto;" class = "filter-svg" alt="Alt text" src="../assets/SV_controls.svg">
+    <img title="a title" style="width: 70%; height: auto; display: block; margin: 0 auto;" class = "filter-svg" alt="Alt text" src="../assets/SV_controls.svg">
     This is a test
 </div>
 This is a test
