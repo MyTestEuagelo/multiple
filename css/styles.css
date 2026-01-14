@@ -1111,7 +1111,8 @@ html {
 /* ============================= */
 .timeline {
     position: relative;
-    margin: 2.5rem 0 1rem 0;
+    margin: 1rem 0 1rem 0;
+    margin-top: 0.5rem;
     /* space reserved for the timeline gutter (line + dot area) */
     --gutter: 2.75rem;
     padding-left: var(--gutter);
@@ -1200,7 +1201,33 @@ html {
         opacity: 0.8;
     }
 }
+/* Logo + Section title below Resume */
+.resume-section-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-top: 1rem;   /* adjust this */
+    margin-bottom: 0.5rem; /* space below the logo/title */
+}
 
+.resume-section-logo svg {
+    width: 33px;
+    height: 33px;
+    color: var(--color-accent);
+    margin-left: 0.3rem;
+}
+
+.resume-section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-accent-2);
+}
+
+@media (max-width: 640px) {
+    .resume-section-logo svg {
+        margin-left: -0.09rem;   /* mobile */
+    }
+}
 
 
 /* Load more */
