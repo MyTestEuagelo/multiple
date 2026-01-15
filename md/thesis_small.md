@@ -1,4 +1,4 @@
-### Control Design of HVDC Link with Virtual Synchronous Generator and Implementation on Real-Time Simulator
+## Control Design of HVDC Link with Virtual Synchronous Generator and Implementation on Real-Time Simulator
 
 
 <!-- <p>This is the first line.<br>
@@ -51,13 +51,27 @@ And this is the second line.</p> -->
             <span class="tag tag-workshop">PHIL</span>
         </div>
     </div>
-    <!-- horizontal divider BELOW -->
-    <div style="height:1.5px; width:100%; background: currentColor; opacity:0.15;"></div>
-    - This is a test
-    <img title="a title" style="width: 70%; height: auto; display: block; margin: 0 auto;" class = "filter-svg" alt="Alt text" src="../assets/SV_controls.svg">
-    This is a test
+    <div style="height:1.5px; width:100%; background: currentColor; opacity:0.15; margin-bottom: 0.5rem"></div>
+   
 </div>
-This is a test
 
+The main inspiration for this project was a visit by <strong>Hitachi Energy</strong> to my University, where I studied.
+The main goals of the project were:
+- Current and voltage control of a three-phase inverter
+- Implementation of virtual inertia technology (VSM)
+- Investigation of **HVDC** interconnections using two virtual inertia technologies: **VSM** and **Synchronverter**
+- Experimental validation through a one-of-a-kind **PHIL** setup
+Part of this project was accepted and presented at the IEEE PES ISGT 2025 conference.
+<!-- <div class="md-h4">Hello</div> -->
+<!-- <a class="cactus-link" href="https://link-url-here.org">IEEE PES ISGT 2025 conference</a> -->
+### Control Structure
+<blockquote>Synchronverter</blockquote>
+<img  style="width: 70%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="Alt text" src="../assets/SV.svg">
 
+<blockquote>Virtual Synchronous Machine</blockquote>
+<img  style="width: 70%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="Alt text" src="../assets/SV.svg">
+<!-- <blockquote>VSM</blockquote> -->
+
+    
+<div class="md-h4">Read the full diploma thesis here:</div> 
 

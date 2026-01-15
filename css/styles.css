@@ -25,7 +25,8 @@ html {
     --color-load_border: #c890d3;
     --color-load_text: #bc8ef0;
     --color-name: #9a51e7;
-    --filter-svgfile: saturate(120%) brightness(95%);  
+    --filter-svgfile: saturate(120%) brightness(95%); 
+    --filter-bnw:  brightness(95%) contrast(70%) ; 
 }
 /* Dark theme colors */
 [data-theme="dark"] {
@@ -43,6 +44,7 @@ html {
     --color-load_text: #8ef09b;
     --color-name: #a2f1a9;
     --filter-svgfile: invert(100%) sepia(0%) saturate(64%) hue-rotate(180deg) brightness(153%) contrast(100%);
+    --filter-bnw: invert(80%) brightness(95%) contrast(80%); 
 }
 
 
@@ -1447,5 +1449,19 @@ html {
 .filter-svg {
     filter: var(--filter-svgfile);
 }
+
+
+.filter-bnwsvg {
+    filter: var(--filter-bnw);
+}
+
+/* Enable ####  */
+.md-h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 1rem 0 0.4rem;
+    color: var(--color-accent-2);
+}
+
 
 
