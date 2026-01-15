@@ -59,22 +59,55 @@ The main inspiration for this project was a visit by <strong>Hitachi Energy</str
 The main goals of the project were:
 - Current and voltage control of a three-phase inverter
 - Implementation of virtual inertia technology (VSM)
-- Investigation of **HVDC** interconnections using two virtual inertia technologies: **VSM** and **Synchronverter**
+- Investigation of **HVDC** interconnection using two virtual inertia technologies: **VSM** and **Synchronverter**
 - Experimental validation through a one-of-a-kind **PHIL** setup
 Part of this project was accepted and presented at the IEEE PES ISGT 2025 conference.
 <!-- <div class="md-h4">Hello</div> -->
 <!-- <a class="cactus-link" href="https://link-url-here.org">IEEE PES ISGT 2025 conference</a> -->
-### Control Structure
+
+<!-- ### Getting the idea -->
+<div class="md-h4">Getting the idea</div>
+The primary objective of this project is to unify two virtual inertia technologies for the converter stations of an HVDC transmission system.<br> <br> 
+<!-- <blockquote>HVDC transmission system</blockquote> -->
+<img  style="width: 85%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="Alt text" src="../assets/Both.svg"><br> 
+Each station is connected to its respective grid via AC filters, while the DC sides are coupled through an HVDC link. This link creates a direct path for active power to flow between the grids, whenever frequency needs support.
+
+<!-- ### Control Structure -->
+<div class="md-h4">Control Structure</div>
+In this setup, Grid 1 is interfaced via a Synchronverter (SV) and Grid 2 via a Virtual Synchronous Machine (VSM). On the AC side, both stations use **droop control** to keep the capacitor voltage steady near rated values.
+ 
 <blockquote>Synchronverter</blockquote>
 <img  style="width: 70%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="Alt text" src="../assets/SV.svg">
+ 
+The DC side management is splits: 
+the **SV** handles the **Active Power** flowing through the HVDC link, 
+while the **VSM** maintains the **DC bus voltage**.
+
 
 <blockquote>Virtual Synchronous Machine</blockquote>
 <img  style="width: 70%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="Alt text" src="../assets/VSM.svg">
+
+Both controllers are driven by droop expressions that react dynamically to changes in each grid’s frequency.
 <!-- <blockquote>VSM</blockquote> -->
 
-<blockquote>HVDC transmission system</blockquote>
-<img  style="width: 85%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="Alt text" src="../assets/Both.svg">
 
-<br>
+<div class="md-h4">PHIL experimental setup</div>
+<div class="container" style = "display: block;">
+    <img src="../assets/Phil_layer1.svg" style="position:relative; visibility:hidden; display: flex;">
+    <img  src="../assets/Phil_layer2.svg">
+    <img  class = "filter-imagesvg" src="../assets/Phil_layer1.svg">
+</div>
+
+
+
+
+
+<!-- <div class="theme-image"></div> -->
+
+
+
+
+
+
+<br> <br> 
 <div class="md-h4">Read the full diploma thesis here:</div> 
-

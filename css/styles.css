@@ -27,6 +27,8 @@ html {
     --color-name: #9a51e7;
     --filter-svgfile: saturate(120%) brightness(95%); 
     --filter-bnw:  brightness(95%) contrast(70%) ; 
+    --filter-image:  brightness(95%) contrast(70%) ;
+    --img-diagram: url("../assets/Phil_layer1.svg");
 }
 /* Dark theme colors */
 [data-theme="dark"] {
@@ -45,6 +47,8 @@ html {
     --color-name: #a2f1a9;
     --filter-svgfile: invert(100%) sepia(0%) saturate(64%) hue-rotate(180deg) brightness(153%) contrast(100%);
     --filter-bnw: invert(80%) brightness(95%) contrast(80%); 
+    --filter-image: invert(80%) sepia(0%) saturate(84%) hue-rotate(1deg) brightness(90%) contrast(180%);
+    --img-diagram: url("../assets/Phil_layer2.svg");
 }
 
 
@@ -1455,13 +1459,50 @@ html {
     filter: var(--filter-bnw);
 }
 
-/* Enable ####  */
-.md-h4 {
-    font-size: 1.15rem;
-    font-weight: 700;
-    margin: 1rem 0 0.4rem;
-    color: var(--color-accent-2);
+
+.filter-imagesvg {
+    filter: var(--filter-image);
 }
 
 
+/* Enable ####  */
+.md-h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 1rem 0 0.4rem;
+    color: var(--color-name);
+}
 
+/* OVERLAY */
+.container {
+  position: relative;
+  width: 90%;
+  margin: 1.5rem auto; /* ← THIS centers it */
+}
+
+.container img {
+  position: absolute;
+  inset: 0;
+  width: 95%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.container > img:first-child {
+  z-index: 2;
+}
+
+/* CHANGE PICTURE WHEN CHANGING THE THEME */
+.theme-image {
+  width: 85%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 0 auto;
+  background-image: var(--img-diagram);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
