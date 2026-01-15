@@ -69,9 +69,12 @@ Part of this project was accepted and presented at the IEEE PES ISGT 2025 confer
 <img  style="width: 70%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="Alt text" src="../assets/SV.svg">
 
 <blockquote>Virtual Synchronous Machine</blockquote>
-<img  style="width: 70%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="Alt text" src="../assets/SV.svg">
+<img  style="width: 70%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="Alt text" src="../assets/VSM.svg">
 <!-- <blockquote>VSM</blockquote> -->
 
-    
+<blockquote>HVDC transmission system</blockquote>
+<img  style="width: 85%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="Alt text" src="../assets/Both.svg">
+
+<br>
 <div class="md-h4">Read the full diploma thesis here:</div> 
 
