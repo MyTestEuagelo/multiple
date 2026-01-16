@@ -61,7 +61,8 @@ The main goals of the project were:
 - Implementation of virtual inertia technology (VSM)
 - Investigation of **HVDC** interconnection using two virtual inertia technologies: **VSM** and **Synchronverter**
 - Experimental validation through a one-of-a-kind **PHIL** setup
-Part of this project was accepted and presented at the IEEE PES ISGT 2025 conference.
+Part of this project was accepted and presented at the IEEE PES ISGT 2025 conference (read the full paper <a href="https://ieeexplore.ieee.org/document/11314231" target="_blank" class="cactus-link">here</a>).
+
 <!-- <div class="md-h4">Hello</div> -->
 <!-- <a class="cactus-link" href="https://link-url-here.org">IEEE PES ISGT 2025 conference</a> -->
 
@@ -69,7 +70,7 @@ Part of this project was accepted and presented at the IEEE PES ISGT 2025 confer
 <div class="md-h4">Getting the idea</div>
 The primary objective of this project is to unify two virtual inertia technologies for the converter stations of an HVDC transmission system.<br> <br> 
 <!-- <blockquote>HVDC transmission system</blockquote> -->
-<img  style="width: 85%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="Alt text" src="../assets/Both.svg"><br> 
+<img  style="width: 85%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="HVDC schematic" src="../assets/Both.svg"><br> 
 Each station is connected to its respective grid via AC filters, while the DC sides are coupled through an HVDC link. This link creates a direct path for active power to flow between the grids, whenever frequency needs support.
 
 <!-- ### Control Structure -->
@@ -77,7 +78,7 @@ Each station is connected to its respective grid via AC filters, while the DC si
 In this setup, Grid 1 is interfaced via a Synchronverter (SV) and Grid 2 via a Virtual Synchronous Machine (VSM). On the AC side, both stations use **droop control** to keep the capacitor voltage steady near rated values.
  
 <blockquote>Synchronverter</blockquote>
-<img  style="width: 70%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="Alt text" src="../assets/SV.svg">
+<img  style="width: 70%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="SV schematic" src="../assets/SV.svg">
  
 The DC side management is splits: 
 the **SV** handles the **Active Power** flowing through the HVDC link, 
@@ -85,14 +86,19 @@ while the **VSM** maintains the **DC bus voltage**.
 
 
 <blockquote>Virtual Synchronous Machine</blockquote>
-<img  style="width: 70%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="Alt text" src="../assets/VSM.svg">
+<img  style="width: 70%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="VSM schematic" src="../assets/VSM.svg">
 
 Both controllers are driven by droop expressions that react dynamically to changes in each grid’s frequency.
 <!-- <blockquote>VSM</blockquote> -->
 
 
 <div class="md-h4">PHIL experimental setup</div>
+The setup consists of two real-time digital simulators (**Typhoon HIL**). Each one is connected with a **programmable bi-directional power supply**, implementing the converter stations (SV & VSM). 
+
 <div class="theme-image"></div>
+
+The **HVDC line module** is used to connect the stations, in order to capture the dynamic responce of a real HVDC transmission line (160km, 100kV, 1000A).<br>
+Real grid data are fed to the simulations in real-time, via a **smart grid meter**.  
 <!-- <div class="container" style = "display: block;">
     <img src="../assets/Phil_layer1.svg" style="position:relative; visibility:hidden; display: flex;">
     <img  src="../assets/Phil_layer2.svg">
@@ -102,10 +108,13 @@ Both controllers are driven by droop expressions that react dynamically to chang
 
 
 
+<div class="md-h4">Results</div>
+The reference value of active power is set to zero per unit, ensuring that when both grid frequencies are at 50 Hz, no power flow occurs. 
+This operating point can be seen at around 60 seconds, where the system remains balanced and neither grid requires support. 
 
-
-
-
+<div class="theme-results"></div>
+The reference value of the DC-link voltage is set to one per unit. 
+Whenever a grid requires support, the droop mechanisms, for active power and DC link voltage on the VSM side, are automatically activated to stabilize the system. 
 
 
 

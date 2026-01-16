@@ -29,6 +29,7 @@ html {
     --filter-bnw:  brightness(95%) contrast(70%) ; 
     --filter-image:  brightness(95%) contrast(70%) ;
     --img-diagram: url("../assets/Phil_white.svg");
+    --img-results: url("../assets/results_white.svg");
 }
 /* Dark theme colors */
 [data-theme="dark"] {
@@ -49,6 +50,7 @@ html {
     --filter-bnw: invert(80%) brightness(95%) contrast(80%); 
     --filter-image: invert(80%) sepia(0%) saturate(84%) hue-rotate(1deg) brightness(90%) contrast(180%);
     --img-diagram: url("../assets/Phil_dark.svg");
+    --img-results: url("../assets/results_black.svg");
 }
 
 
@@ -190,7 +192,7 @@ body {
     color: var(--color-accent-2) !important;
 }
 .cactus-link {
-    color: var(--color-link);
+    color: var(--color-accent);
     text-decoration: underline;
     text-underline-offset: 2px;
     transition: opacity 0.2s ease;
@@ -1242,12 +1244,12 @@ html {
  font-family: inherit;
   margin: 2rem auto 0;
   display: inline-block;
-  font-weight: 500;
-  font-size: 0.75rem;
+  font-weight: 900;
+  font-size: 0.85rem;
   letter-spacing: 0.015em;
   padding: 0.25rem 0.5rem;
   border-radius: 0.35rem;
-  border: 1px solid;
+  border: 1.5px solid;
   background-color: var(--color-load);
   transition: opacity 0.15s ease;
   border-color: var(--color-load_border);
@@ -1506,3 +1508,20 @@ html {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+
+
+/* CHANGE PICTURE WHEN CHANGING THE THEME */
+.theme-results {
+  width: 98%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 0 auto;
+  background-image: var(--img-results);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
