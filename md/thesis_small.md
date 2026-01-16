@@ -121,3 +121,4 @@ Whenever a grid requires support, the droop mechanisms, for active power and DC 
 
 <br> <br> 
 <div class="md-h4">Read the full diploma thesis here:</div> 
+Alternatively, you can download it from the official <a href="https://nemertes.library.upatras.gr/items/81c60c6a-3bd4-4f67-8ef5-f61a1edc67b2" target="_blank" class="cactus-link">University of Patras repository</a>.
