@@ -92,17 +92,18 @@ Both controllers are driven by droop expressions that react dynamically to chang
 
 
 <div class="md-h4">PHIL experimental setup</div>
-<div class="container" style = "display: block;">
+<div class="theme-image"></div>
+<!-- <div class="container" style = "display: block;">
     <img src="../assets/Phil_layer1.svg" style="position:relative; visibility:hidden; display: flex;">
     <img  src="../assets/Phil_layer2.svg">
     <img  class = "filter-imagesvg" src="../assets/Phil_layer1.svg">
-</div>
+</div> -->
 
 
 
 
 
-<!-- <div class="theme-image"></div> -->
+
 
 
 
