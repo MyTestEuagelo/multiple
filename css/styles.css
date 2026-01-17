@@ -1530,11 +1530,14 @@ html {
   aspect-ratio: 16 / 9;
   display: block;
   margin: 0 auto;
+  /* vertical-align: top;  */
 }
 
-/* light mode */
+
 .dark-video { display: none; }
 
-/* dark mode */
+
 [data-theme="dark"] .light-video { display: none; }
-[data-theme="dark"] .dark-video { display: block; }
+[data-theme="dark"] .dark-video { display: block; } 
+
+
