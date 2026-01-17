@@ -43,7 +43,7 @@
         <div class="project-tags">
             <span class="tag tag-safety">Circuit design</span>
             <span class="tag tag-conference">Magnetics</span>
-            <span class="tag tag-arxiv">python-c-matlab</span>
+            <span class="tag tag-arxiv">python-matlab</span>
             <span class="tag tag-workshop">fem</span>
             <!-- <a href="https://arxiv.org/abs/2502.00757" class="tag tag-arxiv">ARXIV</a> -->
             <!-- <a href="https://github.com/J-Rosser-UK/AgentBreeder" class="tag tag-github">GITHUB</a> -->

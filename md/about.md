@@ -46,7 +46,7 @@ I am a recent graduate of the University of Patras, Greece, in Electrical and Co
 
 <!-- As modern power grids integrate increasing levels of renewable energy, concepts such as virtual inertia and power-electronics-based HVDC links play a critical role in maintaining system stability, flexibility, and resilience—making them an active and highly relevant area of research. -->
 
-What excites me most is seeing theoretical concepts transition into real implementations, whether through **real-time simulations**, **laboratory setups**, or **Hardware-in-the-Loop** platforms. Bridging the gap between analysis, control theory, and practical systems is what motivates my work. 
+What excites me most is seeing theoretical concepts transition into real implementations, whether through **real-time simulations**, **laboratory setups**, or **Hardware-In-the-Loop** platforms. Bridging the gap between analysis, control theory, and practical systems is what motivates my work. 
 
 Outside of engineering, I enjoy watching movies, with *"Interstellar"* being one of my all-time favorites.
 
