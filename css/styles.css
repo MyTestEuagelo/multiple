@@ -1525,3 +1525,16 @@ html {
 }
 
 
+.theme-video {
+  width: 75%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin: 0 auto;
+}
+
+/* light mode */
+.dark-video { display: none; }
+
+/* dark mode */
+[data-theme="dark"] .light-video { display: none; }
+[data-theme="dark"] .dark-video { display: block; }

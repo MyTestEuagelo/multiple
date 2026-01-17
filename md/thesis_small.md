@@ -98,7 +98,8 @@ The setup consists of two real-time digital simulators (**Typhoon HIL**). Each o
 <div class="theme-image"></div>
 
 The **HVDC line module** is used to connect the stations, in order to capture the dynamic responce of a real HVDC transmission line (160km, 100kV, 1000A).<br>
-Real grid data are fed to the simulations in real-time, via a **smart grid meter**.  
+Real grid data are fed to the simulations in real-time, via a **smart grid meter**. 
+Note that the **left power supply** operates as a **current source**, while the **right** one operates as a **voltage source**. Additionally, the left inverter (**SV**) operates as a **Voltage Source Converter**, whereas the right inverter (**VSM**) operates as a **Current Source Converter**. 
 <!-- <div class="container" style = "display: block;">
     <img src="../assets/Phil_layer1.svg" style="position:relative; visibility:hidden; display: flex;">
     <img  src="../assets/Phil_layer2.svg">
@@ -116,9 +117,7 @@ This operating point can be seen at around 60 seconds, where the system remains 
 The reference value of the DC-link voltage is set to one per unit. 
 Whenever a grid requires support, the droop mechanisms, for active power and DC link voltage on the VSM side, are automatically activated to stabilize the system. 
 
-
-
-
 <br> <br> 
 <div class="md-h4">Read the full diploma thesis here:</div> 
 Alternatively, you can download it from the official <a href="https://nemertes.library.upatras.gr/items/81c60c6a-3bd4-4f67-8ef5-f61a1edc67b2" target="_blank" class="cactus-link">University of Patras repository</a>.
+
