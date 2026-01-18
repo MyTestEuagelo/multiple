@@ -20,7 +20,7 @@ class ThemeManager {
         this.theme = theme;
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
-        
+        setTimeout(syncThemeVideos, 0);
         // Update theme toggle button aria-label
         const themeToggle = document.getElementById('theme-toggle');
         if (themeToggle) {
@@ -625,4 +625,33 @@ function initCardAnimations() {
 
 // Call it after your cards are loaded (e.g., after initLoadMoreProjects)
 document.addEventListener('DOMContentLoaded', initCardAnimations);
+
+
+function syncThemeVideos() {
+    const wrappers = document.querySelectorAll('.video-wrapper');
+
+    const isDark =
+        document.documentElement.getAttribute('data-theme') === 'dark';
+
+    wrappers.forEach(wrapper => {
+        const light = wrapper.querySelector('.light-video');
+        const dark  = wrapper.querySelector('.dark-video');
+        if (!light || !dark) return;
+
+        const from = isDark ? light : dark;
+        const to   = isDark ? dark : light;
+
+        // sync time
+        to.currentTime = from.currentTime;
+
+        // sync play state
+        if (!from.paused) {
+            to.play().catch(() => {});
+        } else {
+            to.pause();
+        }
+    });
+}
+
+
 
