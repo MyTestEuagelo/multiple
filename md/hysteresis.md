@@ -23,8 +23,9 @@
 
 Capturing the **B–H curve** of a transformer core material requires at least a dual-channel oscilloscope. In this project, my goal was to make this experiment possible using low-cost hardware available to almost **everyone**. By relying on:
 - an Arduino,
-- a simple op-amp,
-- and basic passive components.
+- a simple op-amp, 
+- and basic passive components. 
+The transformer itself:<img  style="width: 20%; height: auto; display: block; margin: 0 auto; transform: rotate(10deg);" alt="transformer" rotate="90" src="../assets/Transformer.png">
 
 <div class="md-h4">The basics</div>
 The hysteresis loop is the **XY** plot of the magnetic field intensity (**H**) versus the magnetic flux density (**B**).
@@ -56,7 +57,7 @@ Successfully captured the B–H hysteresis loop of a transformer core using **lo
 The primary **current** waveform is clearly **non-sinusoidal**, reflecting the nonlinear magnetic behavior of the transformer core.
 
 <div class="md-h4">Considering time</div>
-Take a look at how the hysteresis loop is formed at each measurement step.
+Take a look at how the hysteresis loop is formed at each measurement step. When plotted in 3D with time as the third axis, the result looks like a helix, which brings Euler’s formula to my mind.
 <div class="video-wrapper">
   <video class="theme-video light-video" autoplay muted loop playsinline preload="auto">
     <source src="../assets/3dplot_white.mp4" type="video/mp4">
@@ -65,8 +66,10 @@ Take a look at how the hysteresis loop is formed at each measurement step.
     <source src="../assets/3dplot_black.mp4" type="video/mp4">
   </video>
 </div>
-When plotted in 3D with time as the third axis, the result looks like a helix, which brings Euler’s formula to my mind.
+A short **FEM simulation** video is also included, showing the saturation of the material (note that B values are not displayed, as the focus is on the waveform shape and key characteristic points).
 
 
-+++++ FEM mazi me 3d plot + real hoom setup
+
+
+
 <!-- style="width: 25%;"  -->
