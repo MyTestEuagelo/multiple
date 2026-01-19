@@ -95,7 +95,7 @@ Both controllers are driven by droop expressions that react dynamically to chang
 <div class="md-h4">PHIL experimental setup</div>
 The setup consists of two real-time digital simulators (**Typhoon HIL**). Each one is connected with a **programmable bi-directional power supply**, implementing the converter stations (SV & VSM). 
 
-<div class="theme-image"></div>
+<div class="theme-image" alt="PHIL setup"></div>
 
 The **HVDC line module** is used to connect the stations, in order to capture the dynamic responce of a real HVDC transmission line (160km, 100kV, 1000A).<br>
 Real grid data are fed to the simulations in real-time, via a **smart grid meter**. 

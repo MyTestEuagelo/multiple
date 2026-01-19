@@ -1526,18 +1526,45 @@ html {
 
 
 .theme-video {
+  position: relative;
   width: 75%;
   aspect-ratio: 16 / 9;
   display: block;
   margin: 0 auto;
-  /* vertical-align: top;  */
-}
 
+}
+.video-wrapper {
+    position: relative;
+  width: 100%;
+  display: block;
+}
 
 .dark-video { display: none; }
 
 
 [data-theme="dark"] .light-video { display: none; }
-[data-theme="dark"] .dark-video { display: block; } 
+[data-theme="dark"] .dark-video { display: block; }  
 
 
+/* .video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+}
+
+.theme-video {
+  position: absolute;
+  inset: 0;
+  width: 75%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+} */
+
+/* theme switch */
+/* .dark-video { opacity: 0; } */
+/* [data-theme="dark"] .dark-video { opacity: 1; }
+[data-theme="dark"] .light-video { opacity: 0; }
+[data-theme="light"] .dark-video { opacity: 0; }
+[data-theme="light"] .light-video { opacity: 1; } */

@@ -21,46 +21,52 @@
    
 </div>
 
+Capturing the **B–H curve** of a transformer core material requires at least a dual-channel oscilloscope. In this project, my goal was to make this experiment possible using low-cost hardware available to almost **everyone**. By relying on:
+- an Arduino,
+- a simple op-amp,
+- and basic passive components.
 
-<div class="md-h4">Test equations</div>
-
+<div class="md-h4">The basics</div>
+The hysteresis loop is the **XY** plot of the magnetic field intensity (**H**) versus the magnetic flux density (**B**).
 <div class="video-wrapper">
-  <video class="theme-video light-video" autoplay muted loop playsinline preload="auto">
+  <video class="theme-video light-video" autoplay muted loop playsinline  preload="auto">
     <source src="../assets/Hyst_EQ_white.mp4" type="video/mp4">
   </video>
-
   <video class="theme-video dark-video" autoplay muted loop playsinline preload="auto" >
     <source src="../assets/Hyst_EQ_black.mp4" type="video/mp4">
   </video>
 </div> 
+Using **Ampère’s** and **Faraday’s laws**, the initial problem is transformed into an XY plot of the primary winding **current** and the integral of the secondary winding **voltage**.
 
+<div class="md-h4">Current sensing</div>
+An op-amp configured as a **non-inverting amplifier**, together with a **DC offset circuit**, is used to measure the voltage drop across a sensing resistor. The primary current is then calculated using Ohm’s law.
+<img  style="width: 60%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="Current sensing" src="../assets/Current_sensing.svg">
+Voltage sensing is implemented using a simple voltage divider and a DC offset circuit, while the integration is performed during post-processing of the captured data.
 
-
-
-
-
-<div class="md-h4">Results TEST</div>
+<div class="md-h4">Results</div>
+Successfully captured the B–H hysteresis loop of a transformer core using **low-cost** hardware based on an Arduino platform.
 <div class="video-wrapper">
   <video class="theme-video light-video" autoplay muted loop playsinline preload="auto">
     <source src="../assets/Hyst_white.mp4" type="video/mp4">
   </video>
-
   <video class="theme-video dark-video" autoplay muted loop playsinline preload="auto">
     <source src="../assets/Hyst_black.mp4" type="video/mp4">
   </video>
 </div> 
+The primary **current** waveform is clearly **non-sinusoidal**, reflecting the nonlinear magnetic behavior of the transformer core.
 
-<div class="md-h4">Results TEST 3D</div>
+<div class="md-h4">Considering time</div>
+Take a look at how the hysteresis loop is formed at each measurement step.
 <div class="video-wrapper">
   <video class="theme-video light-video" autoplay muted loop playsinline preload="auto">
     <source src="../assets/3dplot_white.mp4" type="video/mp4">
   </video>
-
   <video class="theme-video dark-video" autoplay muted loop playsinline preload="auto">
     <source src="../assets/3dplot_black.mp4" type="video/mp4">
   </video>
 </div>
+When plotted in 3D with time as the third axis, the result looks like a helix, which brings Euler’s formula to my mind.
 
 
-
++++++ FEM mazi me 3d plot + real hoom setup
 <!-- style="width: 25%;"  -->

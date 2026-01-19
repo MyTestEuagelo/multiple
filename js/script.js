@@ -21,6 +21,7 @@ class ThemeManager {
         document.documentElement.setAttribute('data-theme', theme);
         localStorage.setItem('theme', theme);
         setTimeout(syncThemeVideos, 0);
+        
         // Update theme toggle button aria-label
         const themeToggle = document.getElementById('theme-toggle');
         if (themeToggle) {
@@ -627,6 +628,11 @@ function initCardAnimations() {
 document.addEventListener('DOMContentLoaded', initCardAnimations);
 
 
+
+
+
+
+
 function syncThemeVideos() {
     const wrappers = document.querySelectorAll('.video-wrapper');
 
@@ -652,6 +658,7 @@ function syncThemeVideos() {
         }
     });
 }
+
 
 
 
