@@ -30,10 +30,10 @@ The transformer itself:<img  style="width: 20%; height: auto; display: block; ma
 <div class="md-h4">The basics</div>
 The hysteresis loop is the **XY** plot of the magnetic field intensity (**H**) versus the magnetic flux density (**B**).
 <div class="video-wrapper">
-  <video class="theme-video light-video" autoplay muted loop playsinline  preload="auto">
+  <video class="theme-video light-video" autoplay muted loop playsinline controls preload="auto">
     <source src="../assets/Hyst_EQ_white.mp4" type="video/mp4">
   </video>
-  <video class="theme-video dark-video" autoplay muted loop playsinline preload="auto" >
+  <video class="theme-video dark-video" autoplay muted loop playsinline controls preload="auto" >
     <source src="../assets/Hyst_EQ_black.mp4" type="video/mp4">
   </video>
 </div> 
@@ -47,10 +47,10 @@ Voltage sensing is implemented using a simple voltage divider and a DC offset ci
 <div class="md-h4">Results</div>
 Successfully captured the B–H hysteresis loop of a transformer core using **low-cost** hardware based on an Arduino platform.
 <div class="video-wrapper">
-  <video class="theme-video light-video" autoplay muted loop playsinline preload="auto">
+  <video class="theme-video light-video" autoplay muted loop playsinline controls preload="auto">
     <source src="../assets/Hyst_white.mp4" type="video/mp4">
   </video>
-  <video class="theme-video dark-video" autoplay muted loop playsinline preload="auto">
+  <video class="theme-video dark-video" autoplay muted loop playsinline controls preload="auto">
     <source src="../assets/Hyst_black.mp4" type="video/mp4">
   </video>
 </div> 
@@ -59,10 +59,10 @@ The primary **current** waveform is clearly **non-sinusoidal**, reflecting the n
 <div class="md-h4">Considering time</div>
 Take a look at how the hysteresis loop is formed at each measurement step. When plotted in 3D with time as the third axis, the result looks like a helix, which brings Euler’s formula to my mind.
 <div class="video-wrapper">
-  <video class="theme-video light-video" autoplay muted loop playsinline preload="auto">
+  <video class="theme-video light-video" autoplay muted loop playsinline controls preload="auto">
     <source src="../assets/3dplot_white.mp4" type="video/mp4">
   </video>
-  <video class="theme-video dark-video" autoplay muted loop playsinline preload="auto">
+  <video class="theme-video dark-video" autoplay muted loop playsinline controls preload="auto">
     <source src="../assets/3dplot_black.mp4" type="video/mp4">
   </video>
 </div>
