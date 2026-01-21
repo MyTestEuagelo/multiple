@@ -27,7 +27,7 @@ Capturing the **B–H curve** of a transformer core material requires at least a
 - and basic passive components. 
 The transformer itself:<img  style="width: 20%; height: auto; display: block; margin: 0 auto; transform: rotate(10deg);" alt="transformer" rotate="90" src="../assets/Transformer.png">
 
-<div class="md-h4">The basics</div>
+<div class="md-h4">The Basics</div>
 The hysteresis loop is the **XY** plot of the magnetic field intensity (**H**) versus the magnetic flux density (**B**).
 <div class="video-wrapper">
   <video class="theme-video light-video" autoplay muted loop playsinline controls preload="auto">
@@ -39,7 +39,7 @@ The hysteresis loop is the **XY** plot of the magnetic field intensity (**H**) v
 </div> 
 Using **Ampère’s** and **Faraday’s laws**, the initial problem is transformed into an XY plot of the primary winding **current** and the integral of the secondary winding **voltage**.
 
-<div class="md-h4">Current sensing</div>
+<div class="md-h4">Current Sensing</div>
 An op-amp configured as a **non-inverting amplifier**, together with a **DC offset circuit**, is used to measure the voltage drop across a sensing resistor. The primary current is then calculated using Ohm’s law.
 <img  style="width: 60%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="Current sensing" src="../assets/Current_sensing.svg">
 Voltage sensing is implemented using a simple voltage divider and a DC offset circuit, while the integration is performed during post-processing of the captured data.
@@ -56,7 +56,7 @@ Successfully captured the B–H hysteresis loop of a transformer core using **lo
 </div> 
 The primary **current** waveform is clearly **non-sinusoidal**, reflecting the nonlinear magnetic behavior of the transformer core.
 
-<div class="md-h4">Considering time</div>
+<div class="md-h4">Considering Time</div>
 Take a look at how the hysteresis loop is formed at each measurement step. When plotted in 3D with time as the third axis, the result looks like a helix, which brings Euler’s formula to my mind.
 <div class="video-wrapper">
   <video class="theme-video light-video" autoplay muted loop playsinline controls preload="auto">

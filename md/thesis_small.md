@@ -67,7 +67,7 @@ Part of this project was accepted and presented at the IEEE PES ISGT 2025 confer
 <!-- <a class="cactus-link" href="https://link-url-here.org">IEEE PES ISGT 2025 conference</a> -->
 
 <!-- ### Getting the idea -->
-<div class="md-h4">Getting the idea</div>
+<div class="md-h4">Getting the Idea</div>
 The primary objective of this project is to unify two virtual inertia technologies for the converter stations of an HVDC transmission system.<br> <br> 
 <!-- <blockquote>HVDC transmission system</blockquote> -->
 <img  style="width: 85%; height: auto; display: block; margin: 0 auto;" class = "filter-bnwsvg" alt="HVDC schematic" src="../assets/Both.svg"><br> 
@@ -92,7 +92,7 @@ Both controllers are driven by droop expressions that react dynamically to chang
 <!-- <blockquote>VSM</blockquote> -->
 
 
-<div class="md-h4">PHIL experimental setup</div>
+<div class="md-h4">PHIL Experimental Setup</div>
 The setup consists of two real-time digital simulators (**Typhoon HIL**). Each one is connected with a **programmable bi-directional power supply**, implementing the converter stations (SV & VSM). 
 
 <div class="theme-image" alt="PHIL setup"></div>
