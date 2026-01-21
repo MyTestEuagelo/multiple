@@ -1166,7 +1166,7 @@ A nominal torque of 23.6 Nm was chosen for 50 Hz AC operation at 1500 rpm. The A
 <br> <br>
 <video class="border-video" autoplay muted loop playsinline controls preload="auto">
 <source src="../assets/AC_run.mp4" type="video/mp4">
-</video>
+</video> 
 
 
 <div class="md-h4">Results</div>
